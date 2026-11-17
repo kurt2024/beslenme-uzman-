@@ -17,7 +17,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -27,7 +26,7 @@ jobs:
 
       - name: Install Dependencies & Capacitor
         run: |
-          npm install
+          npm install --package-lock=false
           npx cap init "Besin Pusulası" "com.besinpusulasi.app" --web-dir www --yes || true
           npx cap add android
 
