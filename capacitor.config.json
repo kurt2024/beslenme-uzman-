@@ -1,0 +1,8 @@
+{
+  "appId": "com.besinpusulasi.app",
+  "appName": "Besin Pusulası",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}
